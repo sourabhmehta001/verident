@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Verident Brand Colors */
+  --sage-green: #6FAF8E;
+  --clinical-blue: #4A90E2;
+  --mint: #BFE6D3;
+  --off-white: #F6F8F7;
+  --charcoal: #2E2E2E;
+  --ai-indigo: #8B7CF6;
+  
+  --background: #F6F8F7;
+  --foreground: #2E2E2E;
+  --card: #ffffff;
+  --card-foreground: #2E2E2E;
+  --primary: #6FAF8E;
+  --primary-foreground: #ffffff;
+  --secondary: #BFE6D3;
+  --secondary-foreground: #2E2E2E;
+  --muted: #F6F8F7;
+  --muted-foreground: #4a4a4a;
+  --accent: #4A90E2;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #BFE6D3;
+  --input: #BFE6D3;
+  --ring: #6FAF8E;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #F6F8F7 0%, #BFE6D3 50%, #F6F8F7 100%);
+  min-height: 100vh;
+  color: #2E2E2E;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F8F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6FAF8E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a9a79;
+}
+
+/* Typing animation */
+@keyframes typing {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.typing-dot {
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(191, 230, 211, 0.5);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6FAF8E 0%, #4A90E2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* AI Highlight */
+.ai-highlight {
+  background: linear-gradient(135deg, #8B7CF6 0%, #6FAF8E 100%);
+}
+
+/* Brand button */
+.btn-primary {
+  background: linear-gradient(135deg, #6FAF8E 0%, #5a9a79 100%);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5a9a79 0%, #4a8a69 100%);
+}
+
+/* Sage green utilities */
+.bg-sage { background-color: #6FAF8E; }
+.text-sage { color: #6FAF8E; }
+.border-sage { border-color: #6FAF8E; }
+
+/* Clinical blue utilities */
+.bg-clinical { background-color: #4A90E2; }
+.text-clinical { color: #4A90E2; }
+.border-clinical { border-color: #4A90E2; }
+
+/* Mint utilities */
+.bg-mint-brand { background-color: #BFE6D3; }
+.text-mint-brand { color: #BFE6D3; }
+.border-mint-brand { border-color: #BFE6D3; }
+
+/* AI Indigo utilities */
+.bg-ai-indigo { background-color: #8B7CF6; }
+.text-ai-indigo { color: #8B7CF6; }
+.border-ai-indigo { border-color: #8B7CF6; }
