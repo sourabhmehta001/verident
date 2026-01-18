@@ -492,7 +492,9 @@ function RulesTab() {
                     Priority: {rule.priority}
                   </span>
                 </div>
-                <p className="text-sm text-gray-500 mt-2">{rule.advice}</p>
+                <p className="text-sm text-gray-500 mt-2">
+                  Recommends: {rule.recommendToothpaste.join(', ')} + {rule.recommendToothbrush.join(', ')}
+                </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <span className="text-xs text-gray-500">Conditions:</span>
                   {Object.entries(rule.conditions).map(([key, val]) => (
